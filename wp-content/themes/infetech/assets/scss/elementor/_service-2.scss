@@ -1,0 +1,202 @@
+.ova-service-2 {
+	position: relative;
+	padding: 50px 110px 70px 50px;
+	background-color: #fff;
+	overflow: hidden; 
+	z-index: 3;
+	@media (max-width: 767px) {
+		padding: 30px 100px 30px 30px;
+	}
+	&:after {
+    	@include transaction( all, 0.5s, ease);
+    	position: absolute;
+	    content: "";
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    height: 100%;
+	    background-color: var(--primary);
+	    -webkit-transform-origin: right;
+	    transform-origin: right;
+	    -webkit-transform-style: preserve-3d;
+	    transform-style: preserve-3d;
+	    -webkit-transform: scaleX(0);
+	    transform: scaleX(0);
+    }
+	&:hover {
+		&:after {
+			@include transaction( all, 0.5s, ease);
+			-webkit-transform: scaleX(1);
+	        transform: scaleX(1);
+		}
+        .icon {
+        	@include transaction( all, 0.6s, ease);
+        	background-color: #6c3af0; 
+			i, svg, path {
+				@include transaction( all, 0.5s, ease);
+				color: #fff; 
+				fill: #fff;
+			}
+		}
+       
+		.title {
+			@include transaction( all, 0.5s, ease);
+			color: #fff; 
+		}
+		.description {
+			@include transaction( all, 0.5s, ease);
+			color: #e1d6ff; 
+		}
+		.trapezoid-topleft-1, .trapezoid-topleft-2 {
+            @include transaction( all, 0.5s, ease);
+            -webkit-transition-delay: 0.2s;
+	        transition-delay: 0.2s; 
+		}
+		.trapezoid-topleft-1 {
+			opacity: 0.4;
+			bottom: 0;
+		}
+		.trapezoid-topleft-2 {
+			bottom: -44px;
+			opacity: 0.9;
+		}
+
+	} 
+  
+	.icon {
+		@include transaction( all, 0.6s, ease);
+    	position: absolute;
+    	bottom: 50px;
+    	right: 50px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: 62px;
+		height: 62px;
+		background-color: #f4ecff;
+		border-radius: 50%;
+		z-index: 2;
+        i, svg, path {
+        	@include transaction( all, 0.5s, ease);
+        	display: inline-flex;
+        	position: relative;
+        	bottom: -30px;
+        	right: -30px; 
+         	font-size: 58px;
+         	width: 1em; 
+         	height: 1em; 
+         	color: var(--primary);
+         	fill: var(--primary);
+        }  
+    }
+
+    .title {
+    	@include transaction( all, 0.5s, ease);
+    	margin: 0; 
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 1.2;
+        padding-bottom: 40px; 
+        z-index: 3; 
+        position: relative; 
+    }
+
+    .description {
+    	@include transaction( all, 0.5s, ease);
+    	margin: 0; 
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.4;  
+        z-index: 3; 
+        position: relative;
+    }
+
+    .trapezoid-topleft-1 {
+		@include transaction( all, 0.2s, ease); 
+		position: absolute;
+		bottom: -20px;
+		left: -89px;
+		width: 89px;
+		height: 150%;
+		opacity: 0;  
+		background-color: #7746f1;
+		-webkit-transform-origin: bottom right;
+		transform-origin: bottom right;
+		transform: rotate(30deg);  
+		z-index: 2;
+	}
+	.trapezoid-topleft-2 {
+        @include transaction( all, 0.2s, ease); 
+		position: absolute;
+		bottom: -64px;
+		left: -44px;
+		width: 89px;
+		height: 150%;
+		opacity: 0; 
+		background-color: #6730fd; 
+		-webkit-transform-origin: bottom right;
+		transform-origin: bottom right;
+		transform: rotate(30deg);
+		z-index: 1;
+	}
+
+
+    //template2
+    &.ova-service-2-template2 {
+    	padding: 35px 120px 35px 35px;
+    	&:hover {
+			.triangle-topleft-1, .triangle-topleft-2 {
+	            @include transaction( all, 0.5s, ease);
+	            -webkit-transition-delay: 0.2s;
+	            transition-delay: 0.2s;
+	            left: 0; 
+				opacity: 1; 
+			}
+    	}
+    	.square {
+    		position: absolute;
+    		top: 0;
+    		right: 0;
+    		width: 20px;
+    		height: 20px;
+    		background-color: var(--secondary);
+    	}
+    	.triangle-topleft-1 {
+			@include transaction( all, 0.5s, ease); 
+			position: absolute;
+			top: 0;
+			left: -30px;
+			width: 0;
+			height: 0;
+			opacity: 0;
+			border-top: 144px solid #7746f1;
+			border-right: 80px solid transparent;
+			z-index: 2;
+		}
+		.triangle-topleft-2 {
+            @include transaction( all, 0.55s, ease); 
+			position: absolute;
+			top: 0;
+			left: -30px;
+			width: 0;
+			height: 0;
+			opacity: 0;
+			border-top: 300px solid #6730fd;
+			border-right: 152px solid transparent;
+			z-index: 1;
+		}
+
+    	.title {
+    		text-transform: uppercase; 
+    	}
+        .text_number {
+        	position: absolute;
+	    	bottom: 20px;
+	    	right: 20px;
+	    	font-weight: 200;
+	    	font-size: 60px;
+	    	color: #e4e0ee; 
+	    	z-index: 3;
+        }
+    }
+}

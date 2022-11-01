@@ -1,0 +1,43 @@
+
+---Downloaded files---
+The import files for: Demo Import were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost/IT%20Service
+Data file = C:\xampp\htdocs\IT Service/wp-content/themes/infetech/install-resource/demo-import/demo-content.xml
+Widget file = C:\xampp\htdocs\IT Service/wp-content/themes/infetech/install-resource/demo-import/widgets.wie
+Customizer file = C:\xampp\htdocs\IT Service/wp-content/themes/infetech/install-resource/demo-import/customize.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Main Sidebar : 
+
+Search - No Title - Imported
+Categories - Categories - Imported
+Archives - Archives - Imported
+Tag Cloud - Tags - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+
